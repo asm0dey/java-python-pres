@@ -267,6 +267,24 @@ class MyService(Injector):
 class Repo1(Injector):
     data_source = DataSource
 ```
+
+---
+# На слои поделили
+
+Чтобы не сломать можно использовать [seddonym/import-linter](https://github.com/seddonym/import-linter)
+
+```ini
+[importlinter]
+root_package = mypackage
+
+[importlinter:contract:1]
+name = My three-tier layers contract
+type = layers
+layers=
+    mypackage.endpoint
+    mypackage.service
+    mypackage.repository
+```
 ---
 <!-- _class: lead -->
 
@@ -286,34 +304,21 @@ class Repo1(Injector):
 # Транзакции — это не пара `BEGIN`-`COMMIT` а бизнес-сущность
 
 ---
+
+Есть сторис, который позволяет описать безнес путь
+
+https://docs.djangoproject.com/en/3.0/topics/db/transactions/#django.db.transaction.atomic
+
+---
 # В джаве стандартизировано ВСЁ
 
 * Транзакции - JTA
   * JMS - работа с message-брокерами
   * JDBC - работа с БД
-* Java Servlet API — работа с сетью
 * JSP, JSF — стандарты бэкэнд-рендеринга страниц
-* JAR — формат упаковки приложений ))
 
 И это надёжная основа
 
----
-# На слои поделили
-
-Чтобы не сломать можно использовать [seddonym/import-linter](https://github.com/seddonym/import-linter)
-
-```ini
-[importlinter]
-root_package = mypackage
-
-[importlinter:contract:1]
-name = My three-tier layers contract
-type = layers
-layers=
-    mypackage.high
-    mypackage.medium
-    mypackage.low
-```
 ---
 # Но не будем о грустном
 
@@ -321,9 +326,9 @@ layers=
 
 * Или это тоже грустное?
 
-* В Python все исключения unchecked: хрен поймаешь.
+* В Python все исключения *unchecked*: фиг поймаешь.
 * В Java можно поделить
-  * Но множество «важных» исключений — checked: хрен откажешься ловить
+  * Но множество «важных» исключений — *checked*: фиг откажешься ловить
 
 ---
 И что?
@@ -352,6 +357,7 @@ void someFun(){
 
 ---
 <!-- _class: lead invert -->
+
 ![bg](https://source.unsplash.com/p1SKuYXxqec)
 # <!-- fit --> Экосистема
 
@@ -398,11 +404,10 @@ void someFun(){
 
 ---
 # Безопасна?
-
 Если нам повезёт — мы будем устанавливать приложение глобально
 Если нам повезёт — в setup.py будет аналог `rm -rf /*`
 
-`sudo python setup.py install`
+https://pages.charlesreid1.com/dont-sudo-pip/
 
 А даже если не `sudo` — эта штука может сотворить всё что угодно!
 
@@ -411,7 +416,7 @@ void someFun(){
 ---
 # Типы упаковки
 
-* Egg. Умер, был нестандартизирован, но хато сравнительно юеопасен
+* Egg. Умер, был нестандартизирован, но зато сравнительно безопасен
 * Wheel. Жив и опасен
 
 Хочется лучшего из обоих миров…
@@ -432,6 +437,9 @@ void someFun(){
 * dlint - ещё сколько-то проверок
 
 ---
+Подробнее о болях зависимостей вам расскажет Никита Воронов
+
+---
 <!--
 _backgroundImage: "linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%)"
 _color: white
@@ -440,7 +448,7 @@ _color: white
 
 1. Python прекрасен!
 2. Экосистема огромна
-3. Уже очень нмого чего есть — надо только уметь искать :)
+3. Уже очень много чего есть — надо только уметь искать :)
 4. То чего не хватает — можете добавить вы, комьюнити!
 5. Творите добро!
 
