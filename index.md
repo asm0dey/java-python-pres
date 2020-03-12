@@ -4,7 +4,7 @@ theme: gaia
 size: 4K
 class: default
 paginate: true
-footer: @asm0di0 at Twitter&emsp13;&emsp13;@asm0dey at Telegram&emsp13;&emsp13;#MoscowPythonConf
+footer: @asm0di0 at Twitter&emsp13;&emsp13;@asm0dey at Telegram
 ---
 <!--
 _backgroundImage: "linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%)"
@@ -18,6 +18,9 @@ _footer: ""
 footer {
     display: table
 }
+.hljs-variable { color: lightblue }
+.hljs-string { color: lightgreen }
+.hljs-params { color: lightpink }
 </style>
 
 # Как Java-роботы видят Python
@@ -307,7 +310,35 @@ layers=
 
 Есть сторис, который позволяет описать безнес путь
 
-https://docs.djangoproject.com/en/3.0/topics/db/transactions/#django.db.transaction.atomic
+
+```python
+class Subscribe:
+    @story
+    @arguments('category_id', 'profile_id')
+    def buy(I):
+        I.find_category
+        I.find_profile
+        I.check_balance
+        I.persist_subscription
+        I.show_subscription
+```
+
+---
+
+# Django transactions
+
+```python
+from django.db import transaction
+
+@transaction.atomic
+def viewfunc(request):
+    # This code executes inside a transaction.
+    do_stuff()
+```
+
+Опять на View 🤦🏽‍♂️
+
+[transaction.atomic](https://docs.djangoproject.com/en/3.0/topics/db/transactions/#django.db.transaction.atomic)
 
 ---
 # В джаве стандартизировано ВСЁ
@@ -316,8 +347,7 @@ https://docs.djangoproject.com/en/3.0/topics/db/transactions/#django.db.transact
   * JMS - работа с message-брокерами
   * JDBC - работа с БД
 * JSP, JSF — стандарты бэкэнд-рендеринга страниц
-
-И это надёжная основа
+  И это надёжная основа
 
 ---
 # Но не будем о грустном
@@ -380,7 +410,7 @@ void someFun(){
 
 ![bg left:40%](https://conf.python.ru/uploads/5/df/a46de47948a30276501e77df56623-fit-265x265-0.jpg)
 
-# Сегодня!
+# <!-- fit --> На Moscow Python Conf ++
 
 Виталий Брагилевский о типах :+1:
 
@@ -418,7 +448,6 @@ https://pages.charlesreid1.com/dont-sudo-pip/
 
 * Egg. Умер, был нестандартизирован, но зато сравнительно безопасен
 * Wheel. Жив и опасен
-
 Хочется лучшего из обоих миров…
 
 ---
@@ -437,7 +466,12 @@ https://pages.charlesreid1.com/dont-sudo-pip/
 * dlint - ещё сколько-то проверок
 
 ---
-Подробнее о болях зависимостей вам расскажет Никита Воронов
+
+![bg left:40%](https://conf.python.ru//uploads/3/36/1a47d79a624eedf5a0594c4a51da5.jpg)
+
+# <!-- fit --> На Moscow Python Conf ++
+
+Никита Воронов про ад с зависимостями :fire:
 
 ---
 <!--
@@ -467,4 +501,5 @@ _footer: ""
 
 asm0dey @ Facebook, Telegram
 asm0di0 @ Twitter
+it.asm0dey.ru
 asm0dey@asm0dey.ru
