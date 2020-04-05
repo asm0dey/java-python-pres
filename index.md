@@ -25,7 +25,18 @@ footer {
 
 # Как Java-роботы видят Python
 
-Паша Финкельштейн, Lamoda
+Паша Финкельштейн, JetBrains
+
+---
+<!--
+_backgroundImage: "linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%)"
+_class: lead
+_color: white
+_paginate: false
+-->
+
+# asm0dey @ Telegram, Facebook, etc
+# asm0di0 @ Twitter
 
 ---
 <!--
