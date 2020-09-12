@@ -4,7 +4,7 @@ theme: gaia
 size: 4K
 class: default
 paginate: true
-footer: @asm0di0 at Twitter&emsp13;&emsp13;@asm0dey at Telegram
+footer: @asm0di0 &emsp13;&emsp13;@jbaruch
 ---
 <!--
 _backgroundImage: "linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%)"
@@ -26,17 +26,8 @@ footer {
 # Как Java-роботы видят Python
 
 Паша Финкельштейн, JetBrains
+Барух Садогурский, JFrog
 
----
-<!--
-_backgroundImage: "linear-gradient(to bottom, #000 0%, #1a2028 50%, #293845 100%)"
-_class: lead
-_color: white
-_paginate: false
--->
-
-# asm0dey @ Telegram, Facebook, etc
-# asm0di0 @ Twitter
 
 ---
 <!--
@@ -45,15 +36,22 @@ _class: lead invert
 _color: white
 -->
 
-# Кто я
+![bg left:45% fit drop-shadow ](images/jbaruch.png)
 
-- 13 лет в IT
-- 11 лет в разработке
-  - Почти всё время на JVM
-- Полгода :scream: в Python
+# Тот самый дядюшка Барух
+
+### Приходите, детишки, ко мне в твиттер @jbaruch
 
 ---
-<!-- _class:  -->
+<!-- _color_: white
+_class: lead invert
+ -->
+![bg brightness:.6 fade](images/asm0dey.jpg)
+
+# @asm0di0 at Twitter
+# @asm0dey evrwr
+
+---
 
 ![bg](https://source.unsplash.com/XECZHb6NoFo)
 
@@ -86,9 +84,6 @@ _color: white
 - Все всё понимают
 
 ---
-<!--
-_class:
--->
 
 ![bg right:40% fit](images/MVC2.png)
 
@@ -210,6 +205,9 @@ class Key(models.Model):
 * Логгирование прямо в модели?
 * Сложную логику создать невозможно
 * Транзакциями управлять тоже невозможно
+---
+
+![bg fit](images/virgin.png)
 
 ---
 
@@ -222,6 +220,7 @@ class Key(models.Model):
     @GetRequest("/deal") UUID deal(@Valid Deal deal){
         service.saveDeal(deal);
 ```
+
 
 ---
 
@@ -319,7 +318,7 @@ layers=
 
 ---
 
-Есть сторис, который позволяет описать безнес путь
+Есть сторис, который позволяет описать бизнес путь
 
 
 ```python
@@ -419,11 +418,13 @@ void someFun(){
 
 ---
 
-![bg left:40%](https://conf.python.ru/uploads/5/df/a46de47948a30276501e77df56623-fit-265x265-0.jpg)
+![bg left:40%](https://conf.python.ru/uploads/5/b6/c556b1200679186df061fa10a2acb-fit-265x265-0.jpg)
 
 # <!-- fit --> На Moscow Python Conf ++
 
-Виталий Брагилевский о типах :+1:
+Виталий Брагилевский :+1:
+
+Не только про типы, но и про то, хорошо ли с ними начинать
 
 ---
 
@@ -478,11 +479,9 @@ https://pages.charlesreid1.com/dont-sudo-pip/
 
 ---
 
-![bg left:40%](https://conf.python.ru//uploads/3/36/1a47d79a624eedf5a0594c4a51da5.jpg)
+# <!-- fit --> НЕ БУДЕТ На Moscow Python Conf ++
 
-# <!-- fit --> На Moscow Python Conf ++
-
-Никита Воронов про ад с зависимостями :fire:
+Тут должен был быть доклад Никиты Воронова, но видимо про dephell вы почитаете сами :-)
 
 ---
 <!--
@@ -510,7 +509,5 @@ _footer: ""
 
 ## Вопросы?
 
-asm0dey @ Facebook, Telegram
-asm0di0 @ Twitter
-it.asm0dey.ru
-asm0dey@asm0dey.ru
+@asm0dey @jbaruch
+https://newpodcast2.live
