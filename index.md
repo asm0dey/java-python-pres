@@ -234,7 +234,7 @@ class Key(models.Model):
     @Inject Repo3 repo3; @Inject Repo4 repo4;
     Result<UUID> deal(Deal deal){
         if(/* check */) {}
-        else(/* check */) {
+        else if(/* check */) {
             repo1.save(/* */);
             repo2.save(/* */);
         }
@@ -333,6 +333,8 @@ class Subscribe:
         I.show_subscription
 ```
 
+[proofit404/stories](https://proofit404.github.io/stories/)
+
 ---
 
 # Django transactions
@@ -353,7 +355,7 @@ def viewfunc(request):
 ---
 # В джаве стандартизировано ВСЁ
 
-* Транзакции - JTA
+* Транзакции — JTA
   * JMS — работа с message-брокерами
   * JDBC — работа с БД
 * JSP, JSF — стандарты бэкенд-рендеринга страниц
@@ -377,7 +379,7 @@ def viewfunc(request):
 И что?
 
 ```java
-void someFun(){
+void someFun() {
     try {
         instance.call(payload);
     } catch (IOException e){
@@ -405,7 +407,7 @@ void someFun(){
 # <!-- fit --> Экосистема
 
 ---
-# Я долго ругал django
+# Я долго ругал Django
 
 Но есть и хорошие части!
 
@@ -417,7 +419,7 @@ void someFun(){
             self.client.get('/')
     ```
     записывает все запросы в `.yml` файл
-* [django-stubs](https://pypi.org/project/django-stubs/) Добавляет типы в django! :heart_eyes:
+* [django-stubs](https://pypi.org/project/django-stubs/) Добавляет типы в Django! :heart_eyes:
 
 ---
 
