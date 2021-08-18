@@ -421,15 +421,6 @@ void someFun() {
     записывает все запросы в `.yml` файл
 * [django-stubs](https://pypi.org/project/django-stubs/) Добавляет типы в Django! :heart_eyes:
 
----
-
-![bg left:40%](https://conf.python.ru/uploads/5/b6/c556b1200679186df061fa10a2acb-fit-265x265-0.jpg)
-
-# <!-- fit --> На Moscow Python Conf ++
-
-Виталий Брагилевский :+1:
-
-Не только про типы, но и про то, хорошо ли с ними начинать
 
 ---
 
@@ -495,12 +486,6 @@ https://python-poetry.org/
 
 * bandit — статический анализ security
 * dlint — ещё сколько-то проверок
-
----
-
-# <!-- fit --> НЕ БУДЕТ На Moscow Python Conf ++
-
-Тут должен был быть доклад Никиты Воронова, но, видимо, про dephell вы почитаете сами :-)
 
 ---
 <!--
